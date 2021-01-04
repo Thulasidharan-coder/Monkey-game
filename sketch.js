@@ -26,8 +26,8 @@ function preload(){
 
 //setting up
 function setup() {
-    
-  ground=createSprite(400,300,900,10);
+  createCanvas(windowWidth, windowHeight);
+  ground=createSprite(width-40,300,900,10)
   ground.velocityX=-4;
   ground.x=ground.width/2;
   ground.shapeColor="black";
@@ -35,7 +35,7 @@ function setup() {
   bg.addImage("white",bgImage)
   bg.scale=0.5;
   bg.velocityX=-4;
-  monkey=createSprite(80,280,20,20);
+  monkey=createSprite(80,height-80,20,20);
   monkey.addAnimation("sahasra",monkey_running);
   monkey.scale=0.15;
   bananaGroup=new Group();
